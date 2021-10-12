@@ -1,0 +1,27 @@
+<nav class="blue darken-4">
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">Тeстирование NodeJS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {{#if isIndex}}
+                <li class="active"><a href="/">Главная</a></li>
+            {{else}}
+                <li><a href="/">Главная</a></li>
+            {{/if}}
+            {{#if isCreate}}
+                <li class="active"><a href="/create">Добавление списка</a></li>
+            {{else}}
+                <li><a href="/create">Добавление списка</a></li>
+            {{/if}}
+            {{#if isCreateText}}
+                <li class="active"><a href="/create-text">Добавление статьи</a></li>
+            {{else}}
+                <li><a href="/create-text">Добавление статьи</a></li>
+            {{/if}}
+            {{#if isInfoBot}}
+                <li class="active"><a href="/info-bot">Список пользователей бота</a></li>
+            {{else}}
+                <li><a href="/info-bot">Список пользователей бота</a></li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

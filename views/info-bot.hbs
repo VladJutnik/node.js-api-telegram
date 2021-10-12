@@ -1,0 +1,23 @@
+<br>
+<h2>Список пользователей чат бота</h2>
+<table class="striped">
+    <thead>
+    <tr>
+        <th>Логин</th>
+        <th>Количество правильных</th>
+        <th>Количество неправильных</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#if botInfo.length}}
+        {{#each botInfo}}
+            <tr>
+                <td>{{title}}</td>
+                <td>{{right}}</td>
+                <td>{{wrong}}</td>
+            </tr>
+        {{/each}}
+    {{/if}}
+    </tbody>
+</table>
